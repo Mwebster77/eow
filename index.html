@@ -1,0 +1,144 @@
+<?php
+
+$host="localhost";
+$user="root";
+$password="";
+$db="demo";
+ 
+mysql_connect($host,$user,$password);
+mysql_select_db($db);
+ 
+if(isset($_POST['username'])){
+    
+    $uname=$_POST['username'];
+    $password=$_POST['password'];
+    
+    $sql="select * from loginform where user='".$uname."'AND Pass='".$password."' limit 1";
+    
+    $result=mysql_query($sql);
+    
+    if(mysql_num_rows($result)==1){
+        echo " You Have Successfully Logged in";
+        exit();
+    }
+    else{
+        echo " You Have Entered Incorrect Password";
+        exit();
+    }
+        
+}
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blokzero - Eow || Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="icon" type="image/png" href="images/icons/favicon.ico"/> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
+	<link rel="stylesheet" type="text/css" href="css/brand.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">	
+    		
+</head>
+<body class="grey lighten-5">
+	<div class="limiter-loginEow">
+		<div class="container-loginEow">
+			<div class="wrap-loginEow">
+				<form class="form-loginEow" method="post" action="#">
+					<span class="formTitle p-b-34">
+						Account Login
+					</span>
+					
+					<div class="wrap-loginInput rs1-wrap-loginInput m-b-20" data-validate="Type user name">
+                        <input id="username" class="loginInput" type="text" name="username" placeholder="User name">
+                        <div class="feedbackUsername"></div>
+						<span class="cellBorder-loginInput m-b-20"></span>
+					</div>
+					<div class="wrap-loginInput rs2-wrap-loginInput m-b-20" data-validate="Type password">
+                        <input id="password" type="password" name="password" placeholder="Password">
+                        <div class="feedbackPassword"></div>
+						<span class="cellBorder-loginInput"></span>
+					</div>
+					
+					<div class="container-loginEow-form-btn">
+						<a href="localhost/eow/pages/dashboard.php"><button class="btn brand waves-effect waves-light" type="button" value="">Sign In<i class="material-icons right">account_box</i></button></a>
+						<!-- <button class="btn brand waves-effect waves-light" type="submit" value="sumbit">Sign In<i class="material-icons right">account_box</i></button>
+						<!-- <button class="btn brand waves-effect waves-light" type="submit" value="Submit">Submit<i class="material-icons right">account_box</i></button> -->
+					</div>
+					
+					<div class="w-full text-center p-t-27 p-b-239">
+						<span class="text1">
+							Forgot
+						</span>
+
+						<a href="#" class="text2">
+							User name / password?
+						</a>
+					</div>
+
+					<div class="w-full text-center">
+						<a href="#" class="text3">
+							Sign Up
+						</a>
+					</div>
+				</form>
+
+			<div class="loginEow-left" style="background-image: url('Images/loginImage.jpg')">
+					<!-- <div id="slideshow">
+						<div>
+							<img src="Images/barThirteen.jpg" alt="Bar Thirteen Guildford">
+						</di<v>
+						<div>
+							<img src="Images/sodaCardiff.jpg" alt="Soda Cardiff">
+						</div>
+						<div>
+							<img src="Images/storyCardiff.jpg" alt="Stoy Cardiff">
+						</div>
+					</div>  -->
+				</div> 
+			</div>
+		</div>
+	</div>
+	
+	<div id="dropDownSelect1"></div>
+	
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="js/login.js"></script>
+	
+	<!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script> -->
+
+	
+	<!-- <script>
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() { 
+		  $('#slideshow > div:first')
+			.fadeOut(1000)
+			.next()
+			.fadeIn(1000)
+			.end()
+			.appendTo('#slideshow');
+		},  3000);
+	</script> -->
+
+</body>
+</html>

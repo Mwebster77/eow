@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:OPTIAgency-Gothic;
+	src: url("../font/OPTIAgency-Gothic.otf")
+}
+
+	.brand{
+		background: #78909c !important;	
+	}
+	.brand-text{
+		font-family: Roboto-Regular;
+		color: #78909c !important;
+	}
+	
+		.header-logoEow {
+		font-family: OPTIAgency-Gothic;
+		font-size: 30pt;
+		color: #78909c !important;
+		}
