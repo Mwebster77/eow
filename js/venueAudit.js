@@ -103,8 +103,8 @@ form.addEventListener('submit', e => {
 	
 	const auditNow = new Date();
 	const audit_results = {
-		admin_score: form.auditPercentage, 
-		audit_score: form.venuePercentage,
+		admin_score: form.auditPercentage.value, 
+		audit_score: form.venuePercentage.value,
 		created_at: firebase.firestore.Timestamp.fromDate(auditNow)
 	};
 
