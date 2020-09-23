@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 //connect to database
 $conn = mysqli_connect('localhost','matthew','liquid328','blokzero');
 
@@ -25,8 +25,7 @@ mysqli_free_result($result);
 mysqli_close($conn); 
 
 //* print_r($tills); // outputs the mysql query 
-?> 
-
+?> -->
 
 
 <!doctype html>
