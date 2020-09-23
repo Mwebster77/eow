@@ -1,6 +1,6 @@
 const form = document.querySelector('.venueAudit-form');
 
-form.addEventListener('button', e => {
+form.addEventListener('button2', e => {
 	e.preventDefault();
 
 	const auditNow = new Date();

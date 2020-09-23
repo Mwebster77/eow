@@ -1644,7 +1644,7 @@
 
                     <div class="confirmResult hide">
                         <div class="col s4 center-align">
-                            <button class="btn red lighten-2 waves-effect waves-light" type="button" formaction="../js/auditFormConfirm.js" id="confirm">Confirm & Submit<i class="material-icons right">send</i></button> 
+                            <button class="btn red lighten-2 waves-effect waves-light" type="button2" formaction="../js/auditFormConfirm.js" id="confirm">Confirm & Submit<i class="material-icons right">send</i></button> 
                         <div>
                     </div>
 
