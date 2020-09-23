@@ -41,7 +41,7 @@ const venueCorrectAnswers = [
 
 
 
-const form = document.querySelector('.venueAudit-form');
+const formCheck = document.querySelector('.venueAudit-form');
 const venueResult = document.querySelector('.venueResult');
 const auditResult = document.querySelector('.auditResult');
 const confirmResult = document.querySelector('.confirmResult');
@@ -49,7 +49,7 @@ const checkResult = document.querySelector('.checkResult');
 
 
 
-form.addEventListener('submit', e => {
+formCheck.addEventListener('sumbit', e => {
     e.preventDefault();
 
 	let auditScore = 0;

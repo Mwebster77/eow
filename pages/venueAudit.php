@@ -1639,12 +1639,13 @@
                     <div class="checkResult">
                         <div class="col s3 center-align">
                             <button class="btn brand waves-effect waves-light" type="submit" id="submit">Check Result<i class="material-icons right">check</i></button>
+                            <!-- <button class="btn brand waves-effect waves-light" type="submit" id="check" formaction="../js/auditCheck.js">Check Result<i class="material-icons right">check</i></button> -->
                         </div>
                     </div>
 
                     <div class="confirmResult hide">
                         <div class="col s4 center-align">
-                            <button class="btn red lighten-2 waves-effect waves-light" type="button2" formaction="../js/auditFormConfirm.js" id="confirm">Confirm & Submit<i class="material-icons right">send</i></button> 
+                            <button class="btn red lighten-2 waves-effect waves-light" type="button" id="confirm" formaction="../js/auditFormConfirm.js">Confirm & Submit<i class="material-icons right">send</i></button> 
                         <div>
                     </div>
 

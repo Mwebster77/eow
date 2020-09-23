@@ -102,13 +102,13 @@ form.addEventListener('submit', e => {
 
 	
 	const auditNow = new Date();
-	const audit_results = {
+	const audit_result = {
 		admin_score: form.auditPercentage.value, 
 		audit_score: form.venuePercentage.value,
 		created_at: firebase.firestore.Timestamp.fromDate(auditNow)
 	};
 
-	auditDB.collection("audit_result").add(audit_results).then(() => {
+	auditDB.collection('audit_result').add(audit_result).then(() => {
 		console.log('audit result added to Database');
 	}).catch(err => {
 		console.log(err);
