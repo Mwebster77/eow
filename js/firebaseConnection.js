@@ -14,4 +14,4 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-  const auditDB = firebase.firestore();  
+  const auditDB = firebase.firestore();

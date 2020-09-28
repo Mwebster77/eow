@@ -26,7 +26,7 @@ auditDB.collection('audit_result').orderBy('created_at').limit(4).get().then((sn
 
 	snapshot.docs.forEach(doc => {
 		console.log(doc.data());
-		//addAuditResult(doc.data());
+		addAuditResult(doc.data());
 		
 	})
 });

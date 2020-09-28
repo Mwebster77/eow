@@ -1,12 +1,12 @@
-const form = document.querySelector('.venueAudit-form');
+const formConfirm = document.querySelector('.venueAudit-form');
 
-form.addEventListener('submit', e => {
+formConfirm.addEventListener('confirm', e => {
 	e.preventDefault();
 
 	const auditNow = new Date();
 	const audit_results = {
-		admin_score: form.auditPercentage, 
-		audit_score: form.venuePercentage,
+		admin_score: formConfirm.auditPercentage, 
+		audit_score: formConfirm.venuePercentage,
 		created_at: firebase.firestore.Timestamp.fromDate(auditNow)
 	};
 

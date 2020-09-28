@@ -47,8 +47,6 @@ const auditResult = document.querySelector('.auditResult');
 const confirmResult = document.querySelector('.confirmResult');
 const checkResult = document.querySelector('.checkResult');
 
-
-
 formCheck.addEventListener('sumbit', e => {
     e.preventDefault();
 
