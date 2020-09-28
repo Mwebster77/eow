@@ -41,7 +41,8 @@ const venueCorrectAnswers = [
 
 
 
-const form = document.querySelector('.venueAudit-form');
+const formCheck = document.querySelector('.venueAudit-form');
+const formConfirm = document.querySelector('.submitResults-form')
 const venueResult = document.querySelector('.venueResult');
 const auditResult = document.querySelector('.auditResult');
 const confirmResult = document.querySelector('.confirmResult');
@@ -101,36 +102,35 @@ form.addEventListener('submit', e => {
 	confirmResult.classList.remove('hide');
 
 	
-	const auditNow = new Date();
-	const audit_result = {
-		admin_score: form.auditPercentage.value, 
-		audit_score: form.venuePercentage.value,
-		created_at: firebase.firestore.Timestamp.fromDate(auditNow)
-	};
+	// const auditNow = new Date();
+	// const audit_result = {
+	// 	admin_score: form.auditPercentage, 
+	// 	audit_score: form.venuePercentage,
+	// 	created_at: firebase.firestore.Timestamp.fromDate(auditNow)
+	// };
 
-	auditDB.collection('audit_result').add(audit_result).then(() => {
-		console.log('audit result added to Database');
-	}).catch(err => {
-		console.log(err);
-	})
+	// auditDB.collection('audit_result').add(audit_result).then(() => {
+	// 	console.log('audit result added to Database');
+	// }).catch(err => {
+	// 	console.log(err);
+	// })
 
 });
 
-// form.addEventListener('button', e => {
-// 	e.preventDefault();
+// formConfirm.addEventListener('submit', e => {
+//  	e.preventDefault();
 
-// 	const auditNow = new Date();
-// 	const audit_result = {
-// 		admin_score: form.auditPercentage, 
-// 		audit_score: form.venuePercentage,
-// 		created_at: firebase.firestore.Timestamp.fromDate(auditNow)
-// 	};
+//  	const auditNow = new Date();
+//  	const audit_result = {
+//  		admin_score: form.auditPercentage, 
+//  		 audit_score: form.venuePercentage,
+//  		created_at: firebase.firestore.Timestamp.fromDate(auditNow)
+//  	};
 
-// 	auditDB.collection('audit_result').add(audit_result).then(() => {
-// 		console.log('audit result added');
-// 	}).catch(err => {
-// 		console.log(err);
-// 	})
+//  	auditDB.collection('audit_result').add(audit_result).then(() => {
+//  		console.log('audit result added');
+//  	}).catch(err => {
+//  		console.log(err);
+//  	})
 
 // });
-

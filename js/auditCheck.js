@@ -44,8 +44,11 @@ const venueCorrectAnswers = [
 const formCheck = document.querySelector('.venueAudit-form');
 const venueResult = document.querySelector('.venueResult');
 const auditResult = document.querySelector('.auditResult');
-const confirmResult = document.querySelector('.confirmResult');
+// const confirmResult = document.querySelector('.confirmResult');
 const checkResult = document.querySelector('.checkResult');
+const confirmResult = document.querySelector('.auditResultsToSubmit');
+
+
 
 formCheck.addEventListener('sumbit', e => {
     e.preventDefault();
@@ -90,15 +93,13 @@ formCheck.addEventListener('sumbit', e => {
 	console.log('the Venue score was ' + venueScore);
 	console.log('the Venue Percentage was ' + venuePercentage);
 
+
 	// output results on page
-	
 	venueResult.querySelector('span').textContent = `${venuePercentage}%`;
 	venueResult.classList.remove('hide');
 	auditResult.querySelector('span').textContent = `${auditPercentage}%`;
 	auditResult.classList.remove('hide');
+	
 	confirmResult.classList.remove('hide');
-
-        
-
 });
 
