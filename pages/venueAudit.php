@@ -1596,19 +1596,19 @@
 			<!-- blank coloumn  -->
             <div class="col s1"></div>
 		</div>
-            <div class="row">
-                <!-- blank coloumn -->
-                <div class="col s3"></div>
+        <div class="row">
+            <!-- blank coloumn -->
+            <div class="col s3"></div>
 
-                <div class="checkResult">
-                    <div class="col s6 center-align">
-                        <button class="btn brand waves-effect waves-light" type="submit" name="action" id="submit">Check Result<i class="material-icons right">check</i></button>
-                    </div>
+            <div class="checkResult">
+                <div class="col s6 center-align">
+                    <button class="btn brand waves-effect waves-light" type="submit" name="action" id="submit">Check Result<i class="material-icons right">check</i></button>
                 </div>
-
-                <!-- blank coloumn -->
-                <div class="col s3"></div>
             </div>
+
+            <!-- blank coloumn -->
+            <div class="col s3"></div>
+        </div>
         <!-- results section -->
         <div class="container center-align brown lighten-5 blue-grey-text text-lighten-1 p-b-10">
             <div class="row">
@@ -1642,16 +1642,17 @@
     </form>
 </div>
 <div class="container blue-grey-text text-lighten-1">
-    <form class="submitResults-form brown lighten-5 p-b-10"> 
-        <div class="auditResultsToSubmit hide">
+    <form class="submitResults-form hide brown lighten-5 p-b-10"> 
             <div class="row">
                 <div class="col s2"></div>
                 <div class="input-field col s4">
-                    <input id="venueScore" type="number" class="validate">
+
+                
+                    <input id="venueScore" type="number" min="0" max="100" step=".01" class="validate">
                     <label for="venueScore">Venue Score</label>
                 </div>
                 <div class="input-field col s4">
-                    <input id="auditScore" type="number" class="validate">
+                    <input id="auditScore" type="number" min="0" max="100" step=".01"class="validate">
                     <label for="auditScore">Admin Score</label>
                 </div>
                 <div class="col s2"></div>
@@ -1661,7 +1662,6 @@
                 </div>
                 <div class="col s3"></div>
             </div>
-        </div>
     </form>
 
 
