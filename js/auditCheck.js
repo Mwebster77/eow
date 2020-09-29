@@ -93,10 +93,10 @@ form.addEventListener('submit', e => {
 	localStorage.setItem("venuePercentage", auditPercentage);
 	localStorage.setItem("auditPercentage", venuePercentage);
 	console.log('local storage has stored the Audit Percentage as ' + localStorage.getItem("auditPercentage") + '% and, the Venue Percentage as ' + localStorage.getItem("venuePercentage") + '%');
-	console.log('the Audit score was ' + auditScore + '%');
-	console.log('the Venue score was ' + venueScore + '%');
-	console.log('the Audit Percentage was ' + auditPercentage);
-	console.log('the Venue Percentage was ' + venuePercentage);
+	console.log('the Audit score was ' + auditScore);
+	console.log('the Venue score was ' + venueScore);
+	console.log('the Audit Percentage was ' + auditPercentage + '%');
+	console.log('the Venue Percentage was ' + venuePercentage + '%');
 
 
 		// output results on page
