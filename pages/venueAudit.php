@@ -1649,6 +1649,6 @@
 
 <!-- my written scripts -->
 <script src="../js/auditCheck.js"></script>
-<script src="../js/auditFormConfirm.js"></script>
+<script src="../js/auditConfirm.js"></script>
 <?php include('../templates/footer.php') ?>
 </html>
