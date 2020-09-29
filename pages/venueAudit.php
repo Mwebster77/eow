@@ -1617,24 +1617,18 @@
 
                     <!-- venueResult is the class element used -->
                     <div class="venueResult container hide center-align blue-grey-text text-lighten-1">
-                        <!-- <div class="row"> -->
-                            <div class="col s3"><h5>Venue Audit Score</h5></div>
-                            <div class="col s3">
-                                <h5><i><span class="text-center">0%</span></i></h5>
-                            </div>
-                        <!-- <div class="col s4"></div>
-                        </div> -->
+                        <div class="col s3" id="venueToSend"><h5>Venue Audit Score</h5></div>
+                        <div class="col s3">
+                            <h5><i><span class="text-center">0%</span></i></h5>
+                        </div>
                     </div>
 
                     <!-- auditResult is the class element used -->
                     <div class="auditResult container hide center-align blue-grey-text text-lighten-1">
-                        <!-- <div class="row"> -->
-                            <div class="col s3"><h5>Admin Audit Score</h5></div>
-                            <div class="col s3">
-                                <h5><i><span class="text-center">0%</span></i></h5>
-                            </div>
-                        <!-- <div class="col s4"></div>
-                        </div> -->
+                        <div class="col s3" id="auditToSend"><h5>Admin Audit Score</h5></div>
+                        <div class="col s3">
+                            <h5><i><span class="text-center">0%</span></i></h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1644,18 +1638,6 @@
 <div class="container blue-grey-text text-lighten-1">
     <form class="submitResults-form hide brown lighten-5 p-b-10"> 
             <div class="row">
-                <div class="col s2"></div>
-                <div class="input-field col s4">
-
-                
-                    <input id="venueScore" type="number" min="0" max="100" step=".01" class="validate">
-                    <label for="venueScore">Venue Score</label>
-                </div>
-                <div class="input-field col s4">
-                    <input id="auditScore" type="number" min="0" max="100" step=".01"class="validate">
-                    <label for="auditScore">Admin Score</label>
-                </div>
-                <div class="col s2"></div>
                 <div class="col s3"></div>
                 <div class="col s6 center-align">
                     <button class="btn brand waves-effect waves-light red lighten-1" type="submit" name="action" id="submit">Confirm result<i class="material-icons right">send</i></button>
@@ -1663,96 +1645,10 @@
                 <div class="col s3"></div>
             </div>
     </form>
-
-
-    <!-- <form class="auditFormConfirm brown lighten-5 p-b-10">
-        <div class="confirmResult hide">
-            <div class="col s3 center-align">
-                <button class="btn red lighten-2 waves-effect waves-light" type="submit" name="confirm">Confirm & Submit<i class="material-icons right">send</i></button> 
-            <div>
-        </div>
-    </form> -->
-
-
-    <!-- <form class="container hide" action="venueAudit.php" method="POST">
-        <div class="container">
-            <div class="row">
-                <div class="col s12"><h2>Venue Audit</h2>
-                    <div>
-                    <-- results section - hidden from user on loading --
-                        <div class="venueResult container">
-                            <div class="row">
-                                <div class="col s4"><h5>Unit Audit Score</h5></div>
-                                <div class="col s4">
-                                    <h5><i><span class="text-center">0%</span></i></h5>
-                                </div>
-                                <div class="col s4"></div>
-                            </div>
-                        </div>
-                        <div class="auditResult container">
-                            <div class="row">
-                                <div class="col s4"><h5>Unit Audit Score</h5></div>
-                                <div class="col s4">
-                                    <h5><i><span class="text-center">0%</span></i></h5>
-                                </div>
-                                <div class="col s4"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form> -->
 </div>
 
-
+<!-- my written scripts -->
+<script src="../js/auditCheck.js"></script>
+<script src="../js/auditFormConfirm.js"></script>
 <?php include('../templates/footer.php') ?>
 </html>
-
-
-<!-- REDUNDANT CODE -->
-
-<!-- <div class="container center-align brown lighten-5 blue-grey-text text-lighten-1 p-b-10">
-                <div class="row">
-                    <div>
-                        <!-- results section - hidden from user on loading --
-
-                        <!-- venueResult is the class element used --
-                        <div class="venueResult2 container hide center-align blue-grey-text text-lighten-1">
-                            <!-- <div class="row"> --
-                                <div class="col s3"><h5>Admin Audit Score</h5></div>
-                                <div class="col s3">
-                                    <h5><i><span class="text-center">0%</span></i></h5>
-                                </div>
-                            <!-- <div class="col s4"></div>
-                            </div> --
-                        </div>
-
-                        <!-- auditResult is the class element used --
-                        <div class="auditResult2 container hide center-align blue-grey-text text-lighten-1">
-                            <!-- <div class="row"> --
-                                <div class="col s3"><h5>Admin Audit Score</h5></div>
-                                <div class="col s3">
-                                    <h5><i><span class="text-center">0%</span></i></h5>
-                                </div>
-                            <!-- <div class="col s4"></div>
-                            </div> --
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container center-align p-b-10">
-                <div class="row">
-                <!-- blank coloumn --
-                <div class="col s3"></div>
-
-                <div class="confirmResult hide">
-                        <div class="col s6 center-align">
-                            <button class="btn brand waves-effect waves-light red lighten-1" type="submit" name="action" id="submit">Confirm result<i class="material-icons right">send</i></button>
-                        <div>
-                    </div>
-
-                <!-- blank coloumn --
-                <div class="col s3"></div>
-            </div>
-        </div> -->

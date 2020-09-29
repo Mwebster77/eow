@@ -5,9 +5,9 @@
 
 
 <!-- my written scripts -->
-<script src="../js/auditCheck.js"></script>
+<!-- <script src="../js/auditCheck.js"></script>
 <script src="../js/auditFormConfirm.js"></script>
-<!-- <script src="../js/venueAudit.js"></script>  -->
+<script src="../js/venueAudit.js"></script>  -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

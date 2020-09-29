@@ -59,6 +59,7 @@ form.addEventListener('submit', e => {
 	venuePercentage = +venuePercentage.toFixed(2);
 	var auditPercentage = 0;
 	auditPercentage = +auditPercentage.toFixed(2);
+
 	
 	//takes the value from each radio button
 	const userAuditAnswers = 	[form.a1.value, form.a2.value, form.a3.value, form.a4.value, form.a5.value, form.a6.value, form.a7.value, form.a8.value, form.a9.value, form.a10.value, form.a11.value, 
@@ -87,18 +88,26 @@ form.addEventListener('submit', e => {
 		auditPercentage += Math.round(((auditScore / 336) * 100) * 100) / 100;
 
 
+
 	// sends results to console
-	console.log('the Audit score was ' + auditScore);
+	localStorage.setItem("venuePercentage", auditPercentage);
+	localStorage.setItem("auditPercentage", venuePercentage);
+	console.log('local storage has stored the Audit Percentage as ' + localStorage.getItem("auditPercentage") + '% and, the Venue Percentage as ' + localStorage.getItem("venuePercentage") + '%');
+	console.log('the Audit score was ' + auditScore + '%');
+	console.log('the Venue score was ' + venueScore + '%');
 	console.log('the Audit Percentage was ' + auditPercentage);
-	console.log('the Venue score was ' + venueScore);
 	console.log('the Venue Percentage was ' + venuePercentage);
 
-	// output results on page
+
+		// output results on page
+	// local storage has to go at the end as this is the final value of each item.
 	
 	venueResult.querySelector('span').textContent = `${venuePercentage}%`;
 	venueResult.classList.remove('hide');
 	auditResult.querySelector('span').textContent = `${auditPercentage}%`;
 	auditResult.classList.remove('hide');
+
 	formConfirm.classList.remove('hide');
+
 });
 

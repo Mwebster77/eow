@@ -20,7 +20,7 @@ const addAuditResult = (audit_result) => {
 
 
 // returns the collection audit_result from the blokzeroeow database, it limits it to the last 4 results and orders them in order they were created 
-auditDB.collection('audit_result').orderBy("created_at", "desc").limit(4).get().then((snapshot) => {
+auditDB.collection("audit_result").orderBy("created_at", "desc").limit(4).get().then((snapshot) => {
 	
 	//when the data is retrieved runs the snapshot for each document in the audit_result collection
 
