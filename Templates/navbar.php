@@ -28,27 +28,24 @@
         <li><a href="../pages/dashboard.php"><i class="material-icons left">home</i>Dashboard</a></li>		  
         <li><a class="dropdown-trigger" href="#!" data-target="salesSide"><i class="material-icons left" >payment</i>Sales</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="liquorSide"><i class="material-icons left">local_bar</i>Liquor</a></li>
-        <li><a class="dropdown-trigger" href="../pages/venueAudit.php" data-target="auditSide"><i class="material-icons left">content_paste</i>Audit</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="auditSide"><i class="material-icons left">content_paste</i>Audit</a></li>
         <li><a href="#"><i class="material-icons left">local_shipping</i>Orders</a></li>
         <li><a href="#"><i class="material-icons left">people_outline</i>Labour</a></li>
         <li><a href="#"><i class="material-icons left">school</i>Testing</a></li>	  
   </ul>
-
-
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
-
 
 <!-- Dropdown Structures -->
 
 <!-- Sales Dropdown Structure -->
 <ul id="sales" class="dropdown-content">
-	<li><a href="#"><i class="material-icons left">home</i>Door</a></li>
+	<li><a href="../pages/doorRevenue.php"><i class="material-icons left">home</i>Door</a></li>
 	<li><a href="#"><i class="material-icons left">local_bar</i>Liquor</a></li>
 	<li><a href="#"><i class="material-icons left">receipt</i>Petty Cash</a></li>
 </ul>
 
 <ul id="salesSide" class="dropdown-content">
-	<li><a href="#"><i class="material-icons left">home</i>Door</a></li>
+	<li><a href="../pages/doorRevenue.php"><i class="material-icons left">home</i>Door</a></li>
 	<li><a href="#"><i class="material-icons left">local_bar</i>Liquor</a></li>
 	<li><a href="#"><i class="material-icons left">receipt</i>Petty Cash</a></li>
 </ul>
@@ -77,23 +74,3 @@
 	<li><a href="#"><i class="material-icons left" >monetization_on</i>Safe Check</a></li>
 </ul>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
-
-<!-- Redundant code 
-
-<nav class="blue-grey lighten-1">
-    <div class="nav-wrapper">
-      <ul class="left hide-on-med-and-down">
-        <li><a href="#"><i class="material-icons left">home</i>Dashboard</a></li>		  
-        <li><a class="dropdown-trigger" href="#!" data-target="sales"><i class="material-icons left" >payment</i>Sales</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="liquor"><i class="material-icons left">local_bar</i>Liquor</a></li>
-        <li><a href="#"><i class="material-icons left">content_paste</i>Audit</a></li>
-        <li><a href="#"><i class="material-icons left">local_shipping</i>Orders</a></li>
-        <li><a href="#"><i class="material-icons left">people_outline</i>Labour</a></li>
-      </ul>
-	</div>
-</nav>
-
-
-
-
--->
